@@ -1,0 +1,4 @@
+#!/bin/bash
+# See on kommentaar
+pwd
+whoami
