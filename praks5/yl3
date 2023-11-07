@@ -1,9 +1,7 @@
 #!/bin/bash
 
 #Aja j2rgi tervitamine
-
-echo -e "Sisesta aja v22rtus: \c"
-read aeg
+aeg=`date +%H`
 #kontrollime
 if [ $aeg -ge 6 -a $aeg -lt 12 ]; then
 	echo "Tere hommikust!"
