@@ -1,12 +1,15 @@
 #!/bin/bash
-echo -n "Sisestasite suvaline taisarv: "
-read arv
-# arvutame jaak 2-ga jagamisel
-jaak=$(( $arv % 2 ))
-if [ $jaak -eq 0 ]
-then
-  echo "$arv on paaris"
+if [ $# -ne 1 ]; then
+	echo "K2ivita see skript koos arvuga mille paarsust soovid kontrollida. N2iteks: $0 3"
 else
-  echo "$arv on paaritu"
+	arv=$1
+	# arvutame jaak 2-ga jagamisel
+	jaak=$(( $arv % 2 ))
+	if [ $jaak -eq 0 ]
+	then
+  		echo "$arv on paaris"
+	else
+		echo "$arv on paaritu"
+	fi
 fi
 #tingimus kontoll on loppenud
