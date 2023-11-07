@@ -13,6 +13,6 @@ then
 	bussid=$(($bussid + 1))
 fi
 #tulemuse v2ljastamine
-echo "Kokku on vaja $bussid taisbussi"
+echo "Kokku on vaja $bussid bussi"
 #skripti l6pp
 
