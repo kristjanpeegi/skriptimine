@@ -1,4 +1,5 @@
 #!/bin/bash
+#Antud skript väljastab, kas sisestatud arv on paaris või mitte
 if [ $# -ne 1 ]; then
 	echo "K2ivita see skript koos arvuga mille paarsust soovid kontrollida. N2iteks: $0 3"
 else
